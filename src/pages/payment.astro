@@ -1,0 +1,55 @@
+---
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/normalize.css" />
+    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <link rel="stylesheet" href="/src/styles/payment.css" />
+    <title>Potok</title>
+  </head>
+  <body>
+    <Header />
+    <main class="payment">
+      <div class="container">
+        <h2 class=""></h2>
+        <div class="payment__content">
+          <div>
+            <p class="payment__text">
+              Оплата услуг производится на расчетный счет студии до первого
+              занятия одним из указанных способов:
+              <br />1) Переводом по реквизитам через удобный банк
+              <br />2) По QR-коду через систему быстрых платежей
+              <br />3) По ссылке через Систему быстрых платежей: <a
+                class="payment__link"
+                href="https://qr.nspk.ru/AS1A002C6K1ET4TD9HBA0RKHEDMJ0B9P?type=01&bank=100000000111&crc=42FA
+                "
+                >оплатить сейчас</a
+              >
+            </p>
+            <br />
+            <br />
+            <p class="payment__text">
+              Реквизиты для перевода организации:
+              <br />Расчётный счёт: 00000010008500010008
+              <br />ИНН: 003602000080
+              <br />БИК: 000505000
+              <br />Название банка: ООО "Банк Ipsum"
+              <br />Наименование организации: Индивидуальный предприниматель
+              Варвара Варваро Варваровна
+            </p>
+          </div>
+          <img class="sbp" src="/img/sbpQrcode.png" alt="SBP QR-code" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <Footer />
+    </footer>
+  </body>
+</html>

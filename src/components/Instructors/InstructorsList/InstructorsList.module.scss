@@ -1,0 +1,32 @@
+.content {
+  padding: 40px 0;
+}
+
+.upperText {
+  padding-left: 40px;
+  color: #C9C9C9;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  position: relative;
+  &::before {
+    content: ' \25CF';
+    position: absolute;
+    left: 10px;
+    top:  7px;
+    font-size: 18px;
+  }
+}
+
+.title {
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -3.84px;
+  margin-bottom: 40px;
+}

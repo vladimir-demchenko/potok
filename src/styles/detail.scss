@@ -1,0 +1,80 @@
+.detail_hero {
+  width: 100%;
+  height: calc(100vh);
+  padding-top: 250px;
+  /*TODO заменить картинку*/
+  background: url('/img/aeroBg.png') center center/cover no-repeat;
+
+  &__title {
+    color: #FFF;
+    font-size: 56px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__highlighted {
+    color: #00A3FF;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.detail_hero__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__content {
+  padding: 40px 0;
+}
+
+.title {
+  width: 70%;
+  color: #00A3FF;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about__item {
+  width: 70%;
+  color: #B7B7B7;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.description {
+  padding: 40px 0;
+}
+
+.description__text {
+  color: #AAA;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.reviews {
+  padding: 40px 0;
+}

@@ -1,0 +1,44 @@
+.scheduleCard {
+  display: flex;
+  padding: 50px;
+  width: 360px;
+  height: 100%;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 100px;
+  background: #FFF;
+  box-shadow: 8px 8px 60.9px 0px rgba(0, 0, 0, 0.15);
+}
+
+.scheduleTime {
+  color: #00A3FF;
+  text-shadow: 0px 4px 4.3px rgba(0, 0, 0, 0.15);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.divider {
+  display: block;
+  height: 5px;
+  width: 60%;
+  background: #00A3FF;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scheduleDesc {
+  color: #838383;
+  text-shadow: 0px 4px 4.3px rgba(0, 0, 0, 0.15);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}

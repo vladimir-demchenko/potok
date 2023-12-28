@@ -1,0 +1,33 @@
+.payment {
+  width: 100%;
+  height: calc(100vh);
+  padding-top: 250px;
+  /*TODO заменить картинку*/
+  background: url('/img/servicesBg.png') center center no-repeat;
+}
+
+.payment__content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.payment__link {
+  text-decoration: underline;
+}
+
+.payment__text {
+  width: 70%;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.28px;
+}
+
+.sbp {
+  width: 300px;
+  height: 300px;
+}

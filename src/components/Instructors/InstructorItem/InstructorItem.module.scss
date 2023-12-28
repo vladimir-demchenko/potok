@@ -1,0 +1,57 @@
+.InstSlide {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.img {
+  height: 100%;
+  width: auto;
+  max-height: 500px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.name {
+  color: #00A3FF;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -3.84px;
+}
+
+.subtext {
+  color: #B6B6B6;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.description {
+  color: #969696;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.44px;
+}
+
+.pos {
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2.56px;
+}

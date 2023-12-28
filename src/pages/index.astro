@@ -1,0 +1,87 @@
+---
+// Добро пожаловать в Astro! Все, что находится между этими кодовыми ограждениями с тройным тире
+// это ваш компонент "frontmatter". Он никогда не запускается в браузере.
+// console.log("Это выполняется в вашем терминале, а не в браузере!");
+import Header from "../components/Header/Header";
+import ServicesList from "../components/Services/ui/ServicesList/ServicesList";
+import ScheduleList from "../components/Schedule/ScheduleList/ScheduleList";
+import ScheduleBar from "../components/Schedule/ScheduleBar/ScheduleBar";
+import TrialForm from "../components/TrialForm/TrialForm";
+import PricingList from "../components/Pricing/PricingList/PricingList";
+import CertificateForm from "../components/CertificateForm/CertificateForm";
+import InstructorsList from "../components/Instructors/InstructorsList/InstructorsList";
+import FAQList from "../components/FAQ/FAQList/FAQList";
+import Contacts from "../components/Contacts/Contacts";
+import Footer from "../components/Footer/Footer";
+---
+
+<!-- Ниже приведен ваш "шаблон компонента". Это просто HTML, но с
+     добавлением набольшого волшебства, которое поможет вам создавать отличные шаблоны. -->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/potok_icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/normalize.css" />
+    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <title>Potok</title>
+  </head>
+  <body>
+    <Header />
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">
+          <span class="hero__title-highlighted">Студия Поток</span>
+           - это место для всей <br /> семьи, где каждый найдёт занятие по душе!
+        </h1>
+        <div class="divider"></div>
+        <h2 class="hero__subtitle">
+          В нашем расписании вы найдете проверенные временем направления йоги и
+          фитнеса, которые помогут прийти в форму, развить гибкость и обрести
+          гармонию с собой.
+        </h2>
+      </div>
+    </section>
+    <section id="main_content" class="main_content">
+      <div class="container">
+        <h2 class="main__title">У нас вы можете:</h2>
+        <ul class="main__list">
+          <li class="main__list-item">Lorem ipsum dolor sit amet</li>
+          <li class="main__list-item">Lorem ipsum dolor sit amet</li>
+          <li class="main__list-item">Lorem ipsum dolor sit amet</li>
+          <li class="main__list-item">Lorem ipsum dolor sit amet</li>
+        </ul>
+        <ServicesList client:load />
+      </div>
+    </section>
+    <section class="schedule">
+      <div class="container">
+        <h2 class="schedule__title">РАСПИСАНИЕ:</h2>
+        <ScheduleBar client:load />
+        <ScheduleList />
+      </div>
+    </section>
+    <section>
+      <TrialForm client:load />
+    </section>
+    <section class="pricing">
+      <PricingList client:load />
+    </section>
+    <section>
+      <CertificateForm client:load />
+    </section>
+    <section class="instructor">
+      <InstructorsList client:load />
+    </section>
+    <section class="faq">
+      <FAQList client:load />
+    </section>
+    <section>
+      <Contacts />
+    </section>
+    <footer class="footer">
+      <Footer />
+    </footer>
+  </body>
+</html>

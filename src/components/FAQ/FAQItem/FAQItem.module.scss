@@ -1,0 +1,50 @@
+.question {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.questionText {
+  color: #454545;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.collapseBtn {
+  border-radius: 100%;
+  border: none;
+  background-color: #078AC2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &> svg {
+    margin-top: 4px;
+    height: auto;
+    width: 100%;
+  }
+
+  &> span {
+    color: #fff;
+    font-size: 25px;
+  }
+}
+
+.answer {
+  padding-right: 60px;
+}
+
+.answerText {
+  margin-top: 10px;
+  color: #707070;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}

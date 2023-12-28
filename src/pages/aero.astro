@@ -1,0 +1,90 @@
+---
+import Contacts from "../components/Contacts/Contacts";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import InstructorsList from "../components/Instructors/InstructorsList/InstructorsList";
+import DetailPageForm from "../components/DetailPageForm/DetailPageForm";
+import TrialForm from "../components/TrialForm/TrialForm";
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/normalize.css" />
+    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <link rel="stylesheet" href="/src/styles/detail.scss" />
+    <title>Potok</title>
+  </head>
+  <body>
+    <Header />
+    <section class="detail_hero">
+      <div class="container content">
+        <DetailPageForm client:load />
+        <div class="detail_hero__titles">
+          <h3 class="detail_hero__subtitle">СТУДИЯ ЙОГИ И ФИТНЕСА ПОТОК</h3>
+          <h1 class="detail_hero__title">
+            Занятия <span class="detail_hero__highlighted">Аэройогой</span> в
+            Подольске
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="detail_about">
+      <div class="container about__content">
+        <h2 class="title">Что ждет вас на наших занятиях?</h2>
+        <ul class="about__list">
+          <li class="about__item">Lorem ipsum dolor sit amet,</li>
+          <li class="about__item">Lorem ipsum dolor sit amet,</li>
+          <li class="about__item">Lorem ipsum dolor sit amet,</li>
+          <li class="about__item">Lorem ipsum dolor sit amet,</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <TrialForm client:load />
+    </section>
+    <section class="description">
+      <div class="container">
+        <h2 class="title">Более подробно о тренеровках:</h2>
+        <p class="description__text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr,
+        </p>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="title">Отзывы наших клиентов:</h2>
+        <div
+          style="width:560px;height:800px;overflow:hidden;position:relative;margin:0 auto;"
+        >
+          <iframe
+            style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+            src="https://yandex.ru/maps-reviews-widget/167263882445?comments"
+          ></iframe><a
+            href="https://yandex.ru/maps/org/studiya_yogi_potok/167263882445/"
+            target="_blank"
+            style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box"
+            >Студия йоги Поток на карте Москвы — Яндекс Карты</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="instructor">
+      <InstructorsList client:load />
+    </section>
+    <section></section>
+    <section>
+      <Contacts />
+    </section>
+    <footer class="footer">
+      <Footer />
+    </footer>
+  </body>
+</html>
